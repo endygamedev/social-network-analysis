@@ -27,7 +27,7 @@ FILENAME_NODECSV = "friends"
 FILENAME_FRIENDSJSON = "friends"
 
 # Threads count
-THREADS_COUNT = 4
+THREADS_COUNT = 6
 
 # Global variables
 adj_list = dict()
@@ -156,10 +156,12 @@ def thread_function(num: int, thread_data: List[int], my_friends: List[int]) -> 
     i = 0
     total = len(thread_data)
 
-    if (num % 2 == 0):
+    if (num % 3 == 2):
         login, password = os.getenv("VK_LOGIN"), os.getenv("VK_PASSWORD")
-    else:
+    elif (num % 3 == 1):
         login, password = os.getenv("VK_LOGIN2"), os.getenv("VK_PASSWORD2")
+    else:
+        login, password = os.getenv("VK_LOGIN3"), os.getenv("VK_PASSWORD3")
 
     vk_session = vk_api.VkApi(login, password,
                               captcha_handler=captcha_handler,
@@ -218,9 +220,10 @@ def main() -> None:
 
     # Threads
     threads_data = list(partition(my_friends, total//threads_count + threads_count))
+    theads_len = len(threads_data)
     threads = []
 
-    for i in range(threads_count):
+    for i in range(theads_len):
         thread = threading.Thread(target=thread_function, args=(i, threads_data[i], my_friends, ))
         threads.append(thread)
         thread.start()
