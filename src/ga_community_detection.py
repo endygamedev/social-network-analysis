@@ -312,18 +312,18 @@ def mutation(individual: List[int],
             row = adj_matrix[mut]
             neighbor = [i for i in range(len(row)) if row[i] == 1]
             if len(neighbor) > 1:
-                change = int(math.floor(random.random()*len(neighbor)))
-                individual[mut] = neighbor[change]
+                change = random.choice(neighbor)
+                individual[mut] = change
     return individual
 
 
 def community_detection(adj_list: Dict[int, List[int]], *,
-                        population_count=300, generation=30,
+                        population_count=300, generation=60,
                         r=1.5, crossover_rate=0.7, mutation_rate=0.2, elite_reproduction=0.1) -> Dict[str, Union[List[List[int]], Tuple[Union[int, float]]]]:
     """
         @Synopsis
         def community_detection(adj_list: Dict[int, List[int]], *,
-                                population_count=300, generation=30,
+                                population_count=300, generation=60,
                                 r=1.5, crossover_rate=0.7, mutation_rate=0.2,
                                 elite_reproduction=0.1) -> Dict[str, Union[List[List[int]]], Tuple[Union[int, float]]]
 
@@ -353,25 +353,26 @@ def community_detection(adj_list: Dict[int, List[int]], *,
     n = len(nodes)
     codes = dict(zip(range(n), nodes))
     adj_matrix = get_adj_matrix(adj_list)
-
+    elites_count = int(math.floor(population_count*elite_reproduction))
     population = [initialization(adj_matrix) for _ in range(population_count)]
 
     for g in range(generation):
         sys.stdout.write(f"\rGeneration: {YELLOW}[{g+1}/{generation}]{ENDC}")
         sys.stdout.flush()
 
-        new_populatation = []
         subsets = list(map(generate_subsets, population))
         cs_values = {i: community_score(population[i], subsets[i], r, adj_matrix) for i in range(population_count)}
-        for i in range(population_count):
-            elites = dict(sorted(cs_values.items(), key=lambda item: -item[1])[int(math.floor(population_count*elite_reproduction)):])
-            p1 = roulette_selection(elites)
-            p2 = roulette_selection(elites)
+        elites = dict(sorted(cs_values.items(), key=lambda item: -item[1])[:elites_count]).keys()
+        residual = dict(sorted(cs_values.items(), key=lambda item: -item[1])[elites_count:])
+        new_population = [population[i] for i in elites]
+        for i in range(population_count-elites_count):
+            p1 = roulette_selection(residual)
+            p2 = roulette_selection(residual)
             parent1, parent2 = population[p1], population[p2]
             child = uniform_crossover(parent1, parent2, crossover_rate)
             child = mutation(child, adj_matrix, mutation_rate)
-            new_populatation.append(child)
-        population = new_populatation
+            new_population.append(child)
+        population = new_population
 
     subsets = list(map(generate_subsets, population))
     cs_values = {i: community_score(population[i], subsets[i], r, adj_matrix) for i in range(population_count)}
