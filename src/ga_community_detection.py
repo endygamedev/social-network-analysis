@@ -212,10 +212,10 @@ def community_score(individual: List[int],
     return fitness_value
 
 
-def roulette_selection(elites: Dict[int, int]) -> int:
+def roulette_selection(residual: Dict[int, int]) -> int:
     """
         @Synopsis
-        def roulette_selection(elites: Dict[int, int]) -> int
+        def roulette_selection(residual: Dict[int, int]) -> int
 
         @Description
         All individuals who are not elite pass to this stage, it was decided to
@@ -227,16 +227,16 @@ def roulette_selection(elites: Dict[int, int]) -> int:
         the greater the fraction of fitness of an individual, the greater his
         probability of passing the selection.
 
-        @param elites: Those individuals who did not make it into the elite
-        @type elites: Dict[int, int]
+        @param residual: Those individuals who did not make it into the elite
+        @type residual: Dict[int, int]
 
         @return: Identifier of the selected invidual
         @rtype: int
     """
     prob = random.random()
-    sum_cs = sum(elites.values())
+    sum_cs = sum(residual.values())
     x = 0
-    for k, v in elites.items():
+    for k, v in residual.items():
         x += v
         frac = x/sum_cs
         if prob < frac:
