@@ -93,7 +93,7 @@ def to_json(data: Dict[int, List[int]], *,
         @Description
         Save adjacency list in JSON-file
 
-        @param data: Adjacenct list
+        @param data: Adjacency list
         @type data: Dict[int, List[int]]
         @example data: {1: [2, 3, 4], 2: [1, 4], ...}
     """
