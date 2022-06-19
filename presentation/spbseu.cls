@@ -33,8 +33,6 @@
 % Номер слайда
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
 
-% Выравнивание 
-\newcommand{\justifying}[1]{\parbox{\linewidth}{#1}}
-\newenvironment{nscenter}
-     {\parskip=0pt\par\nopagebreak\centering}
-     {\par\noindent\ignorespacesafterend}
+% Выравнивание
+\usepackage{ragged2e} 
+\apptocmd{\frame}{}{\justifying}{}

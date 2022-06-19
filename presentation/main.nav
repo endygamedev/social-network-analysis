@@ -11,46 +11,57 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\beamer@sectionpages {3}{4}}
 \headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\sectionentry {2}{Метод динамического программирования}{5}{Метод динамического программирования}{0}}
+\headcommand {\sectionentry {2}{Сбор данных и визуализация}{5}{Сбор данных и визуализация}{0}}
 \headcommand {\slideentry {2}{0}{1}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {2}{0}{2}{6/7}{}{0}}
-\headcommand {\beamer@framepages {6}{7}}
+\headcommand {\slideentry {2}{0}{2}{6/6}{}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {2}{0}{3}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
 \headcommand {\beamer@sectionpages {5}{7}}
 \headcommand {\beamer@subsectionpages {5}{7}}
-\headcommand {\sectionentry {3}{Задачи, решаемые методом динамического программирования}{8}{Задачи, решаемые методом динамического программирования}{0}}
-\headcommand {\slideentry {3}{0}{1}{8/8}{}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@sectionpages {8}{8}}
-\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\sectionentry {4}{Задача о замене оборудования}{9}{Задача о замене оборудования}{0}}
-\headcommand {\slideentry {4}{0}{1}{9/9}{}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {4}{0}{2}{10/10}{}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {4}{0}{3}{11/11}{}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@sectionpages {9}{11}}
-\headcommand {\beamer@subsectionpages {9}{11}}
-\headcommand {\sectionentry {5}{Задача о рюкзаке}{12}{Задача о рюкзаке}{0}}
-\headcommand {\slideentry {5}{0}{1}{12/12}{}{0}}
+\headcommand {\sectionentry {3}{Характеристики сети}{8}{Характеристики сети}{0}}
+\headcommand {\slideentry {3}{0}{1}{8/9}{}{0}}
+\headcommand {\beamer@framepages {8}{9}}
+\headcommand {\slideentry {3}{0}{2}{10/11}{}{0}}
+\headcommand {\beamer@framepages {10}{11}}
+\headcommand {\beamer@sectionpages {8}{11}}
+\headcommand {\beamer@subsectionpages {8}{11}}
+\headcommand {\sectionentry {4}{Генетический алгоритм}{12}{Генетический алгоритм}{0}}
+\headcommand {\slideentry {4}{0}{1}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {5}{0}{2}{13/13}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@sectionpages {12}{13}}
-\headcommand {\beamer@subsectionpages {12}{13}}
-\headcommand {\sectionentry {6}{Задача о распределении инвестиций}{14}{Задача о распределении инвестиций}{0}}
-\headcommand {\slideentry {6}{0}{1}{14/14}{}{0}}
+\headcommand {\slideentry {4}{0}{3}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {6}{0}{2}{15/16}{}{0}}
-\headcommand {\beamer@framepages {15}{16}}
-\headcommand {\beamer@sectionpages {14}{16}}
-\headcommand {\beamer@subsectionpages {14}{16}}
-\headcommand {\sectionentry {7}{Заключение}{17}{Заключение}{0}}
-\headcommand {\slideentry {7}{0}{1}{17/17}{}{0}}
-\headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@partpages {1}{17}}
-\headcommand {\beamer@subsectionpages {17}{17}}
-\headcommand {\beamer@sectionpages {17}{17}}
-\headcommand {\beamer@documentpages {17}}
-\headcommand {\gdef \inserttotalframenumber {15}}
+\headcommand {\slideentry {4}{0}{4}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {4}{0}{5}{16/17}{}{0}}
+\headcommand {\beamer@framepages {16}{17}}
+\headcommand {\slideentry {4}{0}{6}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {4}{0}{7}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {4}{0}{8}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {4}{0}{9}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@sectionpages {12}{21}}
+\headcommand {\beamer@subsectionpages {12}{21}}
+\headcommand {\sectionentry {5}{Алгоритм Гирван-Ньюмена}{22}{Алгоритм Гирван-Ньюмена}{0}}
+\headcommand {\slideentry {5}{0}{1}{22/23}{}{0}}
+\headcommand {\beamer@framepages {22}{23}}
+\headcommand {\slideentry {5}{0}{2}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {5}{0}{3}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@sectionpages {22}{25}}
+\headcommand {\beamer@subsectionpages {22}{25}}
+\headcommand {\sectionentry {6}{Заключение}{26}{Заключение}{0}}
+\headcommand {\slideentry {6}{0}{1}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@partpages {1}{26}}
+\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\beamer@sectionpages {26}{26}}
+\headcommand {\beamer@documentpages {26}}
+\headcommand {\gdef \inserttotalframenumber {22}}

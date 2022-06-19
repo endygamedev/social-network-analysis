@@ -1,8 +1,7 @@
 \babel@toc {russian}{}
 \beamer@sectionintoc {1}{Введение}{3}{0}{1}
-\beamer@sectionintoc {2}{Метод динамического программирования}{5}{0}{2}
-\beamer@sectionintoc {3}{Задачи, решаемые методом динамического программирования}{8}{0}{3}
-\beamer@sectionintoc {4}{Задача о замене оборудования}{9}{0}{4}
-\beamer@sectionintoc {5}{Задача о рюкзаке}{12}{0}{5}
-\beamer@sectionintoc {6}{Задача о распределении инвестиций}{14}{0}{6}
-\beamer@sectionintoc {7}{Заключение}{17}{0}{7}
+\beamer@sectionintoc {2}{Сбор данных и визуализация}{5}{0}{2}
+\beamer@sectionintoc {3}{Характеристики сети}{8}{0}{3}
+\beamer@sectionintoc {4}{Генетический алгоритм}{12}{0}{4}
+\beamer@sectionintoc {5}{Алгоритм Гирван-Ньюмена}{22}{0}{5}
+\beamer@sectionintoc {6}{Заключение}{26}{0}{6}
