@@ -36,3 +36,7 @@
 % Выравнивание
 \usepackage{ragged2e} 
 \apptocmd{\frame}{}{\justifying}{}
+
+% Подписи под рисунками
+\usepackage{caption}
+\captionsetup[figure]{font=scriptsize}

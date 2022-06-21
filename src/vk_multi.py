@@ -195,7 +195,7 @@ def main() -> None:
     initial_user = input("Enter `user_id` or `screen_name`: ")
 
     # Log into VK account
-    login, password = os.getenv("VK_LOGIN"), os.getenv("VK_PASSWORD")
+    login, password = os.getenv("VK_LOGIN3"), os.getenv("VK_PASSWORD3")
 
     vk_session = vk_api.VkApi(login, password,
                               captcha_handler=captcha_handler,
